@@ -1,5 +1,5 @@
 body{
-	margin: 20;
+	margin: 50;
 	background: rgb(0, 0, 0);
 	text-align: left;
 	color: white;
@@ -12,3 +12,8 @@ h1{
 h2{
 	color: yellow;
 }
+
+img {
+	width: 400px,
+	height: auto
+  }
