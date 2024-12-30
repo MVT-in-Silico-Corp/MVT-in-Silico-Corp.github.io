@@ -6,7 +6,7 @@ html, body{
 	color: white;
 	font-family: Arial;
 	min-height: auto;
-	font-size: 16px;
+	font-size: 24px;
 }
 
 h1{
@@ -35,6 +35,13 @@ p {
 	font-size: 1em;
 }
 
+<style type="text/css">
+.centerImage
+{
+ text-align:center;
+ display:block;
+}
+</style>
 
 .unselectable {
 	-webkit-user-select: none;  /* Chrome all / Safari all */
@@ -43,10 +50,3 @@ p {
 	user-select: none;          /* Likely future */       
   }
 
-  <style type="text/css">
-  .centerImage
-  {
-   text-align:center;
-   display:block;
-  }
-  </style>
