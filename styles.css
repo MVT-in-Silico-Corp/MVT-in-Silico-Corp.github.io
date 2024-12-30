@@ -35,12 +35,16 @@ p {
 	font-size: 1em;
 }
 
-
-img {
-	width: 100px,
-	height: auto
+#myimg {
+	max-width:none;
+	width:200px;
   }
-
+  
+  @media(max-width:400px) {
+	#myimg {
+	  width: 50%;
+	}
+  }
   .unselectable {
 	-webkit-user-select: none;  /* Chrome all / Safari all */
 	-moz-user-select: none;     /* Firefox all */
