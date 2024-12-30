@@ -43,3 +43,10 @@ p {
 	user-select: none;          /* Likely future */       
   }
 
+  <style type="text/css">
+  .centerImage
+  {
+   text-align:center;
+   display:block;
+  }
+  </style>
