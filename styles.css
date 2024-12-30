@@ -6,7 +6,7 @@ html, body{
 	color: white;
 	font-family: Arial;
 	min-height: auto;
-	font-size: 24px;
+	font-size: 48px;
 }
 
 h1{
@@ -29,6 +29,12 @@ h4{
 	color: cyan;
 	font-size: 1.05em;
 }
+
+p {
+	color: white
+	font-size: 1em;
+}
+
 
 img {
 	width: 100px,
