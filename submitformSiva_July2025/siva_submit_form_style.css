@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial';
+    }
+.contact-container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #000
+
+}
+
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left button{
+    padding: 1px 1px;
+    
+}
+
