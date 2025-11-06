@@ -1,5 +1,5 @@
 html {
-        font-size: 22px; /* Base font size for the entire document */
+        font-size: 24px; /* Base font size for the entire document */
     }
 
 body { background-color: linen; 
@@ -14,7 +14,7 @@ h1   { color: red; text-align: center;
 		font-weight: bolder;
 		margin-top: 0.01em;
 		margin-bottom: 0.01em;
-		line-height: 75%;
+		line-height: 50%;
 	}
 h2   { color: red; text-align: center; 
 	   font-size: 2.75rem;
@@ -22,7 +22,7 @@ h2   { color: red; text-align: center;
 	   font-weight: bold;
 	   margin-top: 0.01em;
 	   margin-bottom: 0.01em;
-	   line-height: 80%;
+	   line-height: 60%;
 	}
 h3   { color: brown; text-align: center; 
 	   font-size: 2.5rem;
@@ -64,4 +64,13 @@ p    {  color: black;
 
 .center-text {
   text-align: center;
+}
+
+.imgr {
+  max-width: 100%;
+  max-width: 150px; /* Set a maximum width for the image */
+  height: auto;
+  position: relative;
+  top: 5px;
+  left:10px;
 }
