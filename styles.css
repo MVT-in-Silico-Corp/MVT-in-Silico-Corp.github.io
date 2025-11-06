@@ -1,24 +1,26 @@
-body { background-color: White; margin: 75px; }
+body { background-color: lemonchiffon; margin: 75px; }
 h1   { color: red; text-align: center; 
 		font-size: 60px;
 	}
 h2   { color: black; text-align: center; 
-	   font-size: 40px;
-	}
-h3   { color: brown; text-align: center; 
 	   font-size: 36px;
 	}
-
-p    {  color: blue; 
+h3   { color: brown; text-align: center; 
 	   font-size: 30px;
 	}
 
+p    {  color: blue; 
+	   font-size: 24px;
+	}
+
 li    {  color: black; 
-	   font-size: 22px;
+	   font-size: 16px;
 	}
 
 .bigFont li{
 font-size:22px;
 }
 
-
+.center-text {
+  text-align: center;
+}
