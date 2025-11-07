@@ -2,7 +2,7 @@ html {
         font-size: 24px; /* Base font size for the entire document */
     }
 
-body { background-color: linen; 
+body { background-color: white; 
 	margin: clamp(5px, 2vmax, 75px); /* Margin between 5px and 75px, scaling with 2vmax */
 	font-family: 'American-Typewriter', 'Helvetica', sans-serif;
 	font-size: 100%;
@@ -12,9 +12,9 @@ h1   { color: red; text-align: center;
 		font-size: 3rem; /* responsive font size */
 		font-family: 'American-Typewriter';
 		font-weight: bolder;
-		margin-top: 0.01em;
-		margin-bottom: 0.01em;
-		line-height: 50%;
+		margin-top: 0.1em;
+		margin-bottom: 0.1em;
+		line-height: 100%;
 	}
 h2   { color: red; text-align: center; 
 	   font-size: 2.75rem;
@@ -24,7 +24,7 @@ h2   { color: red; text-align: center;
 	   margin-bottom: 0.01em;
 	   line-height: 60%;
 	}
-h3   { color: brown; text-align: center; 
+h3   { color: brown; text-align: left;
 	   font-size: 2.5rem;
 	   font-family: 'American-Typewriter';
 	   font-weight: bold;
@@ -32,38 +32,57 @@ h3   { color: brown; text-align: center;
 	   margin-bottom: 0.01em;
 	}
 
-h4   { color: brown; text-align: center; 
-	   font-size: 2.25rem;
+h4   { color: black; text-align: left;
+	   font-size: 1.75rem;
 	   font-family: 'American-Typewriter';
 	   font-weight: bold;
 	   margin-top: 0.01em;
 	   margin-bottom: 0.01em;
 	}
 
-h5   { color: brown; text-align: center; 
-	   font-size: 2rem;
+h5   { color: black; text-align: left;
+	   font-size: 1.5rem;
 	   font-family: 'American-Typewriter';
 	   font-weight: bold;
 	   margin-top: 0.01em;
 	   margin-bottom: 0.01em;
 	}
 
-h6   { color: brown; text-align: center; 
-	   font-size: 1.5rem
+h6   { color: black; text-align: left; 
+	   font-size: 1.25rem
 	   font-family: 'American-Typewriter';
 	   font-weight: bold;
 	   margin-top: 0.01em;
 	   margin-bottom: 0.01em;
 	}
 	
-p    {  color: black; 
+p    {  color: black; text-align: left;
 	   font-size: 1rem;
 	   font-family: 'American-Typewriter';
 	   font-weight: normal;
 	}
 
+p_center {  color: black; text-align: center;
+	   font-size: 1rem;
+	   font-family: 'American-Typewriter';
+	   font-weight: normal;
+	}
+
+  /* Styles for all list items */
+ul li{
+  color: black; text-align: left;
+  font-size: 1rem;
+  font-family: 'American-Typewriter';
+  font-weight: normal;
+  padding: 5px 0;
+}
+
 .center-text {
   text-align: center;
+}
+
+.left-text {
+  text-align: left;
 }
 
 .imgr {
@@ -73,4 +92,287 @@ p    {  color: black;
   position: relative;
   top: 5px;
   left:10px;
+}
+
+main {
+	max-width: calc(100% - 10px); /* Sets the maximum width */
+    width: 100%; /* Allows shrinking on smaller screens */
+    margin: 0 auto; /* Centers the main element */
+    padding: 10px;
+    background-color: white;
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+	}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Menu code starts here */
+#menuToggle
+{
+  display: block;
+  /* You can also use relative/absolute here if you want to stay on the top */
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  max-width: 400px;
+  width: 100vw;
+  max-height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu li label
+{
+  cursor: pointer;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+/* Footer styles */
+
+.footer{
+background: lightblue
+padding:10px 0px;
+font-family: 'American-Typewriter', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color: black;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+/* End of footer styles */
+
+
+
+/* Contact form styles */
+.contact-form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
 }

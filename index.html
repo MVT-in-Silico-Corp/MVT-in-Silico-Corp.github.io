@@ -5,30 +5,107 @@ Copyright: MVT in Silico, 2025.
 -->
 <html>
 <head>
+ <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MVT in Silico, a drug development company.</title>
 <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-<p class="center-text"><h1><red>MVT <i>in</i> Silico</red></h1>
+<!--- -- Navigation menu from: https://codepen.io/erikterwan/pen/EVzeRP -->
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" id="menuCheckbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <li>
+        <a href="index.html" target="_blank">Home</a>
+      </li>
+      <li>
+        <a href="about.html" target="_blank">About Us</a>
+      </li>
+      <li>
+        <a href="tech.html" target="_blank">Our Tech</a>
+      </li>
+      <li>
+        <a href="team.html" target="_blank">Our Team</a>
+      </li>
+      <li>
+        <a href="jobs.html" target="_blank">Opportunities</a>
+      </li>
+      <li>
+        <a href="contact.html" target="_blank">Get in touch!</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--- Main content -->
+<main>
+<br><br><br>
+  <p class="center-text"><h1><red>MVT <i>in</i> Silico</red></h1>
 <p class="center-text" style="color: red; font: American-Typewriter; font-weight: light;">
   <i>Human relevant life sciences.</i>
-<p style="color: black">
-<br><br>
-<img class="imgr" src="mvtISLogo_September2025.png" alt="MVT in Silico Logo">
-<br><br>
+<p style="color: black"> <!-- Reset the p style. -->
+  <h4>Introduction </h4>
+  <p>
+	MVTIS is a life sciences innovation company that presently provides CM&S services for the life sciences. 
+	We provide evidence for products that our clients wish to patent. We encompass a wide range of capabilities from 
+	molecular dynamics to whole body blood flow circulation. In addition,
+	we have internal pipelines to develop our own products.
+</p>
+	<h4> The Challenge</h4>
+  <p>
+	There is a high failure rate in pharma and MedTech R&D from discovery stage to market.
+	A major reason for this is our lack of understanding of the system that the treatment is intended to treat.
+  The use of animals in preclinical testing is a contributor to this problem due to critical species & animal-human differences.
+	</p>
+	<h4>The Solution</h4>
+  <p>
+  We have a two fold solution to this problem. First, we use computer modelling & simulation to understand the system that the treatment is intended to treat.
+ Second, we use non animal models (lab on a chip/microfluidic devices) to validate our computer models.
+  </p>
 
-Founder's work: <a href="http://www.researcherid.com/rid/I-2130-2014">Researcher ID</a>; 
-<a href="http://orcid.org/0000-0002-2634-4894">Orcid</a>; 
-<a href="https://www.researchgate.net/profile/Sanjay_Kharche">Research Gate</a>; 
-<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=kharche%2C+Sanjay">PubMed</a>.</h4> </center>
+	<h4>Lets talk!</h4>
+  <p>
+  We would love to hear from you. Please reach out to us via our <a href="contact.html">contact page.</a> or by email at sumus@mvtinsilico.ca .
+  </p>
 <br>
+</main>
 
-<hr size="5" align="left" width="100%" color=blue>
-<a href="index.html" target="content" STYLE="text-decoration: none">Home.</a>
-<hr size="5" align="left" width="100%" color="#FF0000">
-<hr style="height: '15'; text-align: 'left'; color: '#FF0000'; width: '100%'">
-5<sup>th</sup> November 2025. Copyright: MVT in Silico, Canada. 
+<!--- Footer -->
+<!-- You can add many rows to the footer using div class=row. -->
+<footer>
+  <div class="footer">
+      <div class="row">
+      <ul>
+      <li><a href="privacy.html">Privacy & Cookie Policy</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+      </div>
+    <div class="row">We adopt a KISS (keep it simple & straightforward) approach. <br>This is a static website to keep overheads & risks to a minimum.
+      <br>There is no use of cookies or any tracking of any kind on this website. </div>
+      <div class="row">Copyright &copy 2025 MVT in Silico, Canada. All rights reserved.</div>
+  </div>
+</footer>
 
 </body>
 </html>
