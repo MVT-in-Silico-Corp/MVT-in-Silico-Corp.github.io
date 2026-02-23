@@ -260,7 +260,7 @@ main {
 /* Footer styles */
 
 .footer{
-background: lightblue
+background: blue
 padding:10px 0px;
 font-family: 'American-Typewriter', sans-serif;
 text-align:center;
@@ -313,8 +313,6 @@ margin:0% 3%;
 }
 }
 /* End of footer styles */
-
-
 
 /* Contact form styles */
 .contact-form-container {
