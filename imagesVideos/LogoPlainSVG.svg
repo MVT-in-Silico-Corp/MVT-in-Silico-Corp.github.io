@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="196.82501mm"
+   height="37.119205mm"
+   viewBox="0 0 196.82501 37.119205"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-20.955209,-13.478921)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:25.4px;line-height:0;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#0000ff;stroke-width:1;stroke-dasharray:4, 1"
+       x="123.25919"
+       y="32.543736"
+       id="text4"><tspan
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:25.4px;line-height:0.8;font-family:Helvetica;-inkscape-font-specification:'Helvetica Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke-width:1"
+         x="123.25919"
+         y="32.543736">MVT <tspan
+   style="font-style:italic"
+   id="tspan12">in</tspan> Silico</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:14.1111px;line-height:1;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:5.29167px;fill:#0000ff;fill-opacity:1;stroke-width:1"
+         x="125.90503"
+         y="47.298306"
+         id="tspan11">THERAPEUTICS</tspan></text>
+    <circle
+       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.911362;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path6-8"
+       cx="-7.9519649"
+       cy="46.842171"
+       r="6.5443192"
+       transform="rotate(-45)" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.03709;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 22.562656,44.07481 C 32.829884,33.808705 32.829884,33.808705 32.829884,33.808705"
+       id="path9-8" />
+    <circle
+       style="fill:#ffffff;stroke:none;stroke-width:0.135722"
+       id="path1"
+       cx="216.78021"
+       cy="49.598125"
+       r="1" />
+    <rect
+       style="fill:#0000ff;fill-opacity:1;stroke-width:0.230825"
+       id="rect1"
+       width="8"
+       height="8.1081066"
+       x="8.2612371"
+       y="29.652969"
+       transform="rotate(-35)" />
+    <rect
+       style="fill:#00c8ff;fill-opacity:1;stroke-width:0.230825"
+       id="rect1-8"
+       width="8"
+       height="8.1081066"
+       x="8.2612371"
+       y="37.76107"
+       transform="rotate(-35)" />
+    <circle
+       style="fill:#0000ff;fill-opacity:1;stroke-width:0.20159"
+       id="path1-4"
+       cx="12.261236"
+       cy="29.923233"
+       transform="rotate(-35)"
+       r="4" />
+    <circle
+       style="fill:#00c8ff;fill-opacity:1;stroke-width:0.194518"
+       id="path1-3"
+       cx="16.784472"
+       cy="47.987133"
+       transform="matrix(0.75833923,-0.65186011,0.49545078,0.86863602,0,0)"
+       r="4" />
+  </g>
+</svg>
